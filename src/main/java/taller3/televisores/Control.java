@@ -2,47 +2,47 @@
 
 
 public class Control {
-	TV tv;
+	private  TV tv;
 	
 
 	
-	void turnOn() {
+	public void turnOn() {
 		tv.turnOn();
 	}
 	
-	void turnOff() {
+	public void turnOff() {
 		tv.turnOff();
 	}
 	
-	void canalUp() {
+	public void canalUp() {
 		tv.canalUp();
 	}
 	
-	void canalDown() {
+	public void canalDown() {
 		tv.canalDown();
 	}
 	
-	void volumenUp() {
+	public void volumenUp() {
 		tv.volumenUp();
 	}
 	
-	void setCanal(int canal) {
+	public void setCanal(int canal) {
 		tv.setCanal(canal);
 	}
 	
-	void volumenDown() {
+	public void volumenDown() {
 		tv.volumenDown();
 	}
 	
-	void enlazar(TV tv){
+	public void enlazar(TV tv){
 		this.tv = tv;
 		tv.control = this;
 	}
 	
-	TV getTv() {
+	public TV getTv() {
 		return this.tv;
 	}
-	void setTv(TV tv) {
+	public void setTv(TV tv) {
 		this.tv = tv;
 		tv.control = this;
 	}

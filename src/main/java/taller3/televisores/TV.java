@@ -1,97 +1,97 @@
 package taller3.televisores;
 
 public class TV {
-	Marca marca;
-	int canal = 1;
-	int precio = 500;
-	boolean estado;
-	int volumen = 1;
+	private Marca marca;
+	private int canal = 1;
+	private int precio = 500;
+	private boolean estado;
+	private int volumen = 1;
 	Control control;
-	static int numTv = 0;
+	private static int numTv = 0;
 	
 	
-	TV(Marca marca,boolean estado){
+	public TV(Marca marca,boolean estado){
 		this.marca = marca;
 		this.estado = estado;
 		numTv ++;
 	}
 	
-	Marca getMarca(){
+	public Marca getMarca(){
 		return marca;
 	}
 	
-	Control getControl() {
+	public Control getControl() {
 		return control;
 	}
 	
-	int getPrecio() {
+	public int getPrecio() {
 		return precio;
 	}
 	
-	int getVolumen() {
+	public int getVolumen() {
 		return volumen;
 	}
 	
-	int getCanal() {
+	public int getCanal() {
 		return canal;
 	}
 	
 	//	Sets
-	void setMarca(Marca marca){
+	public void setMarca(Marca marca){
 		this.marca = marca;
 	}
 	
-	void setControl(Control control) {
+	public void setControl(Control control) {
 		this.control = control;
 	}
 	
-	void setPrecio(int precio) {
+	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
 	
-	void setVolumen(int volumen) {
+	public void setVolumen(int volumen) {
 		this.volumen = volumen;
 	}
 	
-	void setCanal(int canal) {
+	public void setCanal(int canal) {
 		this.canal = canal;
 	}
 	
-	int setNumTv() {
+	public int setNumTv() {
 		return numTv;
 	}
 	
-	void turnOn() {
+	public void turnOn() {
 		estado = true;
 	}
 	
-	void turnOff() {
+	public void turnOff() {
 		estado = false;
 	}
 	
-	boolean getEstado() {
+	public boolean getEstado() {
 		return estado;
 	}
 	
-	void canalUp() {
+	public void canalUp() {
 		if (this.estado == true && this.canal !=120) {
 			this.canal ++;
 		}
 	}
 	
-	void canalDown() {
+	public void canalDown() {
 		if (this.estado == true && this.canal != 1) {
 			this.canal--;
 		}
 	}
 	
-	void volumenUp() {
+	public void volumenUp() {
 		if(this.estado == true && this.volumen !=7) {
 			this.volumen++;
 		}
 	}
 	
-	void volumenDown() {
+	public void volumenDown() {
 		if(this.estado == true && this.volumen !=0) {
 			this.volumen--;
 		}
