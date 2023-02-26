@@ -57,11 +57,11 @@ public class TV {
 		this.canal = canal;
 	}
 	
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTv;
 	}
 
-	public void setNumTV(int numTv) {
+	public static void setNumTV(int numTv) {
 		TV.numTv = numTv;
 	}
 	
