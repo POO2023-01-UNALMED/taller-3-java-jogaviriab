@@ -2,7 +2,7 @@
 
 
 public class Control {
-	private  TV tv;
+	TV tv;
 	
 
 	
