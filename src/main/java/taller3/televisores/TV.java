@@ -57,7 +57,7 @@ public class TV {
 		this.canal = canal;
 	}
 	
-	public int setNumTv() {
+	public int setNumTV() {
 		return numTv;
 	}
 	
